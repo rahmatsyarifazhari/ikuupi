@@ -1,8 +1,53 @@
-import 'package:flutter/material.dart';
+import 'dart:async';
 
-class Splash extends StatelessWidget {
-  const Splash({Key? key, required MaterialColor backgroundColor})
-      : super(key: key);
+import 'package:flutter/material.dart';
+import 'package:iku_application/login.dart';
+
+// class Splash extends StatelessWidget {
+//   const Splash({Key? key, required MaterialColor backgroundColor, nextScreen})
+//       : super(key: key);
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       title: 'IKU',
+//       theme:
+//           ThemeData(scaffoldBackgroundColor: Color.fromARGB(255, 240, 165, 0)),
+//       home: Scaffold(
+//         body: Center(
+//           child: Column(
+//               mainAxisAlignment: MainAxisAlignment.center,
+//               children: [Image.asset('assets/images/splashikuupi.png')]),
+//         ),
+//       ),
+//     );
+//   }
+// }
+
+class Splash extends StatefulWidget {
+  const Splash({Key? key}) : super(key: key);
+
+  @override
+  State<Splash> createState() => _SplashState();
+}
+
+class _SplashState extends State<Splash> {
+  @override
+  void initState() {
+    super.initState();
+    startSplashScreen();
+  }
+
+  startSplashScreen() async {
+    var duration = const Duration(seconds: 3);
+    return Timer(duration, () {
+      Navigator.of(context).pushReplacement(
+        MaterialPageRoute(builder: (context) {
+          return MyApp();
+        }),
+      );
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -19,35 +64,7 @@ class Splash extends StatelessWidget {
       ),
     );
   }
+
+  @override
+  noSuchMethod(Invocation invocation) => super.noSuchMethod(invocation);
 }
-  // @override
-  // Widget build(BuildContext context) {
-  //   home:
-  //   Scaffold(
-  //     backgroundColor: Color.fromARGB(240, 240, 165, 0),
-  //   );
-  // }
-  // Widget build(BuildContext context) {
-  //   return Scaffold(
-  //     body: Center(
-  //       child: Column(
-  //         mainAxisAlignment: MainAxisAlignment.center,
-  //         children: [
-  //           Container(
-  //             child: Text(
-  //               'IKU UPI',
-  //               style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
-  //             ),
-  //           ),
-  //           Container(
-  //             child: Text(
-  //               'Indikator Kinerja Utama UPI',
-  //               style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-  //             ),
-  //           ),
-  //         ],
-  //       ),
-  //     ),
-  //   );
-  // }
-// }
