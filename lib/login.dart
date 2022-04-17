@@ -1,87 +1,100 @@
 import 'package:flutter/material.dart';
 
-class MyApp extends StatelessWidget {
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatefulWidget {
   const MyApp({Key? key}) : super(key: key);
-
-  static const String _title = 'Login page';
-
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: _title,
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text(_title),
-          backgroundColor: Color.fromARGB(255, 228, 88, 38),
-        ),
-        body: const MyStatefulWidget(),
-      ),
-    );
+  MyAppState createState() {
+    return MyAppState();
   }
 }
 
-class MyStatefulWidget extends StatefulWidget {
-  const MyStatefulWidget({Key? key}) : super(key: key);
-
-  @override
-  State<MyStatefulWidget> createState() => _MyStatefulWidgetState();
-}
-
-class _MyStatefulWidgetState extends State<MyStatefulWidget> {
-  TextEditingController nameController = TextEditingController();
-  TextEditingController passwordController = TextEditingController();
-
+class MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return Padding(
-        padding: const EdgeInsets.all(10),
-        child: ListView(
-          children: <Widget>[
-            Container(
-                alignment: Alignment.center,
-                padding: const EdgeInsets.all(10),
-                child: const Text(
-                  'SSO (Single Sign On)',
-                  style: TextStyle(
-                      color: Color.fromARGB(255, 228, 88, 38),
-                      fontWeight: FontWeight.w500,
-                      fontSize: 30),
-                )),
-            Container(
-              padding: const EdgeInsets.all(10),
-              child: TextField(
-                controller: nameController,
-                decoration: const InputDecoration(
-                  border: OutlineInputBorder(),
-                  labelText: 'User Name',
+    return MaterialApp(
+        home: Scaffold(
+      // appBar: AppBar(title: const Text("Bottom Nav")),
+      body: Stack(
+        children: [
+          Container(
+            height: double.infinity,
+            decoration: BoxDecoration(
+                image: DecorationImage(
+              fit: BoxFit.cover,
+              image: const AssetImage("images/isola.jpg"),
+              colorFilter: ColorFilter.mode(
+                  Colors.black.withOpacity(0.2), BlendMode.dstATop),
+            )),
+          ),
+          Container(
+            height: 50,
+            // decoration: BoxDecoration(border: Border.all()),
+            child: Image.asset("images/iku.png"),
+          ),
+          Center(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Container(
+                  width: 300,
+                  height: 200,
+                  // padding: EdgeInsets.all(100),
+                  decoration: const BoxDecoration(
+                    // border: Border.all(),
+                    image: DecorationImage(
+                      image: AssetImage("images/UPI.png"),
+                    ),
+                  ),
+                  clipBehavior: Clip.hardEdge,
                 ),
-              ),
+                const Padding(
+                    padding: EdgeInsets.fromLTRB(70, 50, 70, 10),
+                    child: TextField(
+                        decoration: InputDecoration(
+                            enabledBorder: OutlineInputBorder(),
+                            labelText: 'Username',
+                            floatingLabelStyle: TextStyle(color: Colors.black),
+                            focusedBorder: OutlineInputBorder(
+                                borderSide: BorderSide(color: Colors.black))))),
+                const Padding(
+                    padding: EdgeInsets.fromLTRB(70, 10, 70, 10),
+                    child: TextField(
+                      decoration: InputDecoration(
+                          enabledBorder: OutlineInputBorder(),
+                          labelText: 'Password',
+                          floatingLabelStyle: TextStyle(color: Colors.black),
+                          focusedBorder: OutlineInputBorder(
+                              borderSide: BorderSide(color: Colors.black))),
+                      obscureText: true,
+                    )),
+                Padding(
+                    padding:
+                        const EdgeInsets.all(30), //padding 50px ke semua arah
+                    child: ElevatedButton(
+                      onPressed: () {
+                        setState(() {
+                          // _nama = textEditController.text;
+                        }); //refresh
+                      },
+                      child: const Text('Login'),
+                      style: ElevatedButton.styleFrom(
+                          primary: Colors.red,
+                          textStyle: const TextStyle(fontSize: 20),
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 50, vertical: 20),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20.0),
+                          )),
+                    )),
+              ],
             ),
-            Container(
-              padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
-              child: TextField(
-                obscureText: true,
-                controller: passwordController,
-                decoration: const InputDecoration(
-                  border: OutlineInputBorder(),
-                  labelText: 'Password',
-                ),
-              ),
-            ),
-            Container(
-                height: 50,
-                padding: const EdgeInsets.fromLTRB(10, 20, 10, 0),
-                child: ElevatedButton(
-                  style: ButtonStyle(
-                      backgroundColor: MaterialStateProperty.all<Color>(
-                          Color.fromARGB(255, 228, 88, 38))),
-                  child: const Text('Login'),
-                  onPressed: () {
-                    print(nameController.text);
-                    print(passwordController.text);
-                  },
-                )),
-          ],
-        ));
+          )
+        ],
+      ),
+    ));
   }
 }
