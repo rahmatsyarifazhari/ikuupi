@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const FPMIPA());
+  runApp(const FPIPS());
 }
 
-class FPMIPA extends StatelessWidget {
-  const FPMIPA({Key? key}) : super(key: key);
+class FPIPS extends StatelessWidget {
+  const FPIPS({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

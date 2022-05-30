@@ -1,7 +1,13 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:iku_application/login.dart';
+import 'package:iku_application/Login.dart';
+import 'package:iku_application/Navigasi.dart';
+import 'package:iku_application/Progress.dart';
+
+void main() {
+  runApp(const Splash());
+}
 
 class Splash extends StatefulWidget {
   const Splash({Key? key}) : super(key: key);
@@ -22,7 +28,7 @@ class _SplashState extends State<Splash> {
     return Timer(duration, () {
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(builder: (context) {
-          return MyApp();
+          return Navigasi();
         }),
       );
     });
