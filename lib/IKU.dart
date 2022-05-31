@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'FPIMIPA.dart';
+import 'FIP.dart';
+import 'FPIPS.dart';
 
 void main() {
   runApp(const IKU());
@@ -34,48 +37,75 @@ class IKU extends StatelessWidget {
                   crossAxisCount: 2,
                 ),
                 children: [
-                  Container(
-                    decoration: BoxDecoration(
-                        // border: Border.all(),
-                        image: const DecorationImage(
-                            image: AssetImage("images/UPI.png"))),
-                    padding: const EdgeInsets.all(14),
-                    margin: const EdgeInsets.all(20),
-                    alignment: Alignment.bottomCenter,
-                    child: const Text(
-                      'FPMIPA',
-                      style: TextStyle(backgroundColor: Colors.white),
+                  InkWell(
+                    child: Container(
+                      decoration: BoxDecoration(
+                          // border: Border.all(),
+                          image: const DecorationImage(
+                              image: AssetImage("images/UPI.png"))),
+                      padding: const EdgeInsets.all(14),
+                      margin: const EdgeInsets.all(20),
+                      alignment: Alignment.bottomCenter,
+                      child: const Text(
+                        'FPMIPA',
+                        style: TextStyle(backgroundColor: Colors.white),
+                      ),
                     ),
+                    onTap: () {
+                      Navigator.of(context)
+                          .push(MaterialPageRoute(builder: (context) {
+                        return FPMIPA();
+                      }));
+                    },
                   ),
+
+                  ////////////////////
                   // onTap: () {
                   //   Navigator.of(context).push(MaterialPageRoute(builder: (context) {
                   //     return FPMIPA();
                   //   }));
                   // }
-                  Container(
-                      decoration: BoxDecoration(
-                          // border: Border.all(),
-                          image: const DecorationImage(
-                              image: AssetImage("images/UPI.png"))),
-                      padding: const EdgeInsets.all(14),
-                      margin: const EdgeInsets.all(20),
-                      alignment: Alignment.bottomCenter,
-                      child: const Text(
-                        'FPIPS',
-                        style: TextStyle(backgroundColor: Colors.white),
-                      )),
-                  Container(
-                      decoration: BoxDecoration(
-                          // border: Border.all(),
-                          image: const DecorationImage(
-                              image: AssetImage("images/UPI.png"))),
-                      padding: const EdgeInsets.all(14),
-                      margin: const EdgeInsets.all(20),
-                      alignment: Alignment.bottomCenter,
-                      child: const Text(
-                        'FIP',
-                        style: TextStyle(backgroundColor: Colors.white),
-                      )),
+                  /////////////////////
+                  InkWell(
+                    child: Container(
+                        decoration: BoxDecoration(
+                            // border: Border.all(),
+                            image: const DecorationImage(
+                                image: AssetImage("images/UPI.png"))),
+                        padding: const EdgeInsets.all(14),
+                        margin: const EdgeInsets.all(20),
+                        alignment: Alignment.bottomCenter,
+                        child: const Text(
+                          'FPIPS',
+                          style: TextStyle(backgroundColor: Colors.white),
+                        )),
+                    onTap: () {
+                      Navigator.of(context)
+                          .push(MaterialPageRoute(builder: (context) {
+                        return FPIPS();
+                      }));
+                    },
+                  ),
+                  InkWell(
+                    child: Container(
+                        decoration: BoxDecoration(
+                            // border: Border.all(),
+                            image: const DecorationImage(
+                                image: AssetImage("images/UPI.png"))),
+                        padding: const EdgeInsets.all(14),
+                        margin: const EdgeInsets.all(20),
+                        alignment: Alignment.bottomCenter,
+                        child: const Text(
+                          'FIP',
+                          style: TextStyle(backgroundColor: Colors.white),
+                        )),
+                    onTap: () {
+                      Navigator.of(context)
+                          .push(MaterialPageRoute(builder: (context) {
+                        return FIP();
+                      }));
+                    },
+                  ),
                   Container(
                       decoration: BoxDecoration(
                           // border: Border.all(),
