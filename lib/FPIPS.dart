@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'IKU.dart';
 
 void main() {
   runApp(const FPIPS());
@@ -15,150 +16,164 @@ class FPIPS extends StatelessWidget {
           // appBar: AppBar(
           //   title: const Text('Hello'),
           // ),
-          body: Stack(
-        children: [
-          Container(
-            height: double.infinity,
-            decoration: BoxDecoration(
-                image: DecorationImage(
-              fit: BoxFit.cover,
-              image: const AssetImage("images/isola.jpg"),
-              colorFilter: ColorFilter.mode(
-                  Colors.black.withOpacity(0.2), BlendMode.dstATop),
-            )),
+          appBar: AppBar(
+            leading: GestureDetector(
+              child: Icon(
+                Icons.arrow_back_ios,
+                color: Colors.black,
+              ),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
+            centerTitle: true,
+            title: const Text('FPIPS'),
           ),
-          Center(
-            child: GridView(
-                padding: const EdgeInsets.all(20),
-                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 2,
-                ),
-                children: [
-                  Container(
-                    decoration: BoxDecoration(
-                        // border: Border.all(),
-                        image: const DecorationImage(
-                            image: AssetImage("images/UPI.png"))),
-                    padding: const EdgeInsets.all(14),
-                    margin: const EdgeInsets.all(20),
-                    alignment: Alignment.bottomCenter,
-                    child: const Text(
-                      'Pendidikan Kewarganegaraan',
-                      style: TextStyle(backgroundColor: Colors.white),
+          body: Stack(
+            children: [
+              Container(
+                height: double.infinity,
+                decoration: BoxDecoration(
+                    image: DecorationImage(
+                  fit: BoxFit.cover,
+                  image: const AssetImage("images/isola.jpg"),
+                  colorFilter: ColorFilter.mode(
+                      Colors.black.withOpacity(0.2), BlendMode.dstATop),
+                )),
+              ),
+              Center(
+                child: GridView(
+                    padding: const EdgeInsets.all(20),
+                    gridDelegate:
+                        const SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 2,
                     ),
-                  ),
-                  Container(
-                      decoration: BoxDecoration(
-                          // border: Border.all(),
-                          image: const DecorationImage(
-                              image: AssetImage("images/UPI.png"))),
-                      padding: const EdgeInsets.all(14),
-                      margin: const EdgeInsets.all(20),
-                      alignment: Alignment.bottomCenter,
-                      child: const Text(
-                        'Pendidikan Sejarah',
-                        style: TextStyle(backgroundColor: Colors.white),
-                      )),
-                  Container(
-                      decoration: BoxDecoration(
-                          // border: Border.all(),
-                          image: const DecorationImage(
-                              image: AssetImage("images/UPI.png"))),
-                      padding: const EdgeInsets.all(14),
-                      margin: const EdgeInsets.all(20),
-                      alignment: Alignment.bottomCenter,
-                      child: const Text(
-                        'Pendidikan Geografi',
-                        style: TextStyle(backgroundColor: Colors.white),
-                      )),
-                  Container(
-                      decoration: BoxDecoration(
-                          // border: Border.all(),
-                          image: const DecorationImage(
-                              image: AssetImage("images/UPI.png"))),
-                      padding: const EdgeInsets.all(14),
-                      margin: const EdgeInsets.all(20),
-                      alignment: Alignment.bottomCenter,
-                      child: const Text(
-                        'llmu Pendidikan Agama Islam',
-                        style: TextStyle(backgroundColor: Colors.white),
-                      )),
-                  Container(
-                      decoration: BoxDecoration(
-                          // border: Border.all(),
-                          image: const DecorationImage(
-                              image: AssetImage("images/UPI.png"))),
-                      padding: const EdgeInsets.all(14),
-                      margin: const EdgeInsets.all(20),
-                      alignment: Alignment.bottomCenter,
-                      child: const Text(
-                        'Manajemen Resort & Leisure',
-                        style: TextStyle(backgroundColor: Colors.white),
-                      )),
-                  Container(
-                      decoration: BoxDecoration(
-                          // border: Border.all(),
-                          image: const DecorationImage(
-                              image: AssetImage("images/UPI.png"))),
-                      padding: const EdgeInsets.all(14),
-                      margin: const EdgeInsets.all(20),
-                      alignment: Alignment.bottomCenter,
-                      child: const Text(
-                        'Manajemen Pemasaran Pariwisata',
-                        style: TextStyle(backgroundColor: Colors.white),
-                      )),
-                  Container(
-                      decoration: BoxDecoration(
-                          // border: Border.all(),
-                          image: const DecorationImage(
-                              image: AssetImage("images/UPI.png"))),
-                      padding: const EdgeInsets.all(14),
-                      margin: const EdgeInsets.all(20),
-                      alignment: Alignment.bottomCenter,
-                      child: const Text(
-                        'Manajemen Industri Katering',
-                        style: TextStyle(backgroundColor: Colors.white),
-                      )),
-                  Container(
-                      decoration: BoxDecoration(
-                          // border: Border.all(),
-                          image: const DecorationImage(
-                              image: AssetImage("images/UPI.png"))),
-                      padding: const EdgeInsets.all(14),
-                      margin: const EdgeInsets.all(20),
-                      alignment: Alignment.bottomCenter,
-                      child: const Text(
-                        'Pendidikan Ilmu Pengetahuan Sosial',
-                        style: TextStyle(backgroundColor: Colors.white),
-                      )),
-                  Container(
-                      decoration: BoxDecoration(
-                          // border: Border.all(),
-                          image: const DecorationImage(
-                              image: AssetImage("images/UPI.png"))),
-                      padding: const EdgeInsets.all(14),
-                      margin: const EdgeInsets.all(20),
-                      alignment: Alignment.bottomCenter,
-                      child: const Text(
-                        'Ilmu Komunikasi',
-                        style: TextStyle(backgroundColor: Colors.white),
-                      )),
-                  Container(
-                      decoration: BoxDecoration(
-                          // border: Border.all(),
-                          image: const DecorationImage(
-                              image: AssetImage("images/UPI.png"))),
-                      padding: const EdgeInsets.all(14),
-                      margin: const EdgeInsets.all(20),
-                      alignment: Alignment.bottomCenter,
-                      child: const Text(
-                        'Pendidikan Sosiologi',
-                        style: TextStyle(backgroundColor: Colors.white),
-                      )),
-                ]),
-          )
-        ],
-      )),
+                    children: [
+                      Container(
+                        decoration: BoxDecoration(
+                            // border: Border.all(),
+                            image: const DecorationImage(
+                                image: AssetImage("images/UPI.png"))),
+                        padding: const EdgeInsets.all(14),
+                        margin: const EdgeInsets.all(20),
+                        alignment: Alignment.bottomCenter,
+                        child: const Text(
+                          'Pendidikan Kewarganegaraan',
+                          style: TextStyle(backgroundColor: Colors.white),
+                        ),
+                      ),
+                      Container(
+                          decoration: BoxDecoration(
+                              // border: Border.all(),
+                              image: const DecorationImage(
+                                  image: AssetImage("images/UPI.png"))),
+                          padding: const EdgeInsets.all(14),
+                          margin: const EdgeInsets.all(20),
+                          alignment: Alignment.bottomCenter,
+                          child: const Text(
+                            'Pendidikan Sejarah',
+                            style: TextStyle(backgroundColor: Colors.white),
+                          )),
+                      Container(
+                          decoration: BoxDecoration(
+                              // border: Border.all(),
+                              image: const DecorationImage(
+                                  image: AssetImage("images/UPI.png"))),
+                          padding: const EdgeInsets.all(14),
+                          margin: const EdgeInsets.all(20),
+                          alignment: Alignment.bottomCenter,
+                          child: const Text(
+                            'Pendidikan Geografi',
+                            style: TextStyle(backgroundColor: Colors.white),
+                          )),
+                      Container(
+                          decoration: BoxDecoration(
+                              // border: Border.all(),
+                              image: const DecorationImage(
+                                  image: AssetImage("images/UPI.png"))),
+                          padding: const EdgeInsets.all(14),
+                          margin: const EdgeInsets.all(20),
+                          alignment: Alignment.bottomCenter,
+                          child: const Text(
+                            'llmu Pendidikan Agama Islam',
+                            style: TextStyle(backgroundColor: Colors.white),
+                          )),
+                      Container(
+                          decoration: BoxDecoration(
+                              // border: Border.all(),
+                              image: const DecorationImage(
+                                  image: AssetImage("images/UPI.png"))),
+                          padding: const EdgeInsets.all(14),
+                          margin: const EdgeInsets.all(20),
+                          alignment: Alignment.bottomCenter,
+                          child: const Text(
+                            'Manajemen Resort & Leisure',
+                            style: TextStyle(backgroundColor: Colors.white),
+                          )),
+                      Container(
+                          decoration: BoxDecoration(
+                              // border: Border.all(),
+                              image: const DecorationImage(
+                                  image: AssetImage("images/UPI.png"))),
+                          padding: const EdgeInsets.all(14),
+                          margin: const EdgeInsets.all(20),
+                          alignment: Alignment.bottomCenter,
+                          child: const Text(
+                            'Manajemen Pemasaran Pariwisata',
+                            style: TextStyle(backgroundColor: Colors.white),
+                          )),
+                      Container(
+                          decoration: BoxDecoration(
+                              // border: Border.all(),
+                              image: const DecorationImage(
+                                  image: AssetImage("images/UPI.png"))),
+                          padding: const EdgeInsets.all(14),
+                          margin: const EdgeInsets.all(20),
+                          alignment: Alignment.bottomCenter,
+                          child: const Text(
+                            'Manajemen Industri Katering',
+                            style: TextStyle(backgroundColor: Colors.white),
+                          )),
+                      Container(
+                          decoration: BoxDecoration(
+                              // border: Border.all(),
+                              image: const DecorationImage(
+                                  image: AssetImage("images/UPI.png"))),
+                          padding: const EdgeInsets.all(14),
+                          margin: const EdgeInsets.all(20),
+                          alignment: Alignment.bottomCenter,
+                          child: const Text(
+                            'Pendidikan Ilmu Pengetahuan Sosial',
+                            style: TextStyle(backgroundColor: Colors.white),
+                          )),
+                      Container(
+                          decoration: BoxDecoration(
+                              // border: Border.all(),
+                              image: const DecorationImage(
+                                  image: AssetImage("images/UPI.png"))),
+                          padding: const EdgeInsets.all(14),
+                          margin: const EdgeInsets.all(20),
+                          alignment: Alignment.bottomCenter,
+                          child: const Text(
+                            'Ilmu Komunikasi',
+                            style: TextStyle(backgroundColor: Colors.white),
+                          )),
+                      Container(
+                          decoration: BoxDecoration(
+                              // border: Border.all(),
+                              image: const DecorationImage(
+                                  image: AssetImage("images/UPI.png"))),
+                          padding: const EdgeInsets.all(14),
+                          margin: const EdgeInsets.all(20),
+                          alignment: Alignment.bottomCenter,
+                          child: const Text(
+                            'Pendidikan Sosiologi',
+                            style: TextStyle(backgroundColor: Colors.white),
+                          )),
+                    ]),
+              )
+            ],
+          )),
     );
   }
 }
