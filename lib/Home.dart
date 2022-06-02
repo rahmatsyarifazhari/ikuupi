@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
 
-import 'package:flutter_ikupi/Akreditas.dart';
-import 'package:flutter_ikupi/IKU.dart';
-import 'package:flutter_ikupi/listKendala.dart';
+import 'package:iku_application/Akreditasi.dart';
+import 'package:iku_application/IKU.dart';
+import 'package:iku_application/listKendala.dart';
 import 'package:hexcolor/hexcolor.dart';
+
+void main() {
+  runApp(const Home());
+}
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
@@ -84,7 +88,7 @@ class Home extends StatelessWidget {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => akreditasiScreen(),
+                                builder: (context) => Akreditasi(),
                               ));
                         },
                         child: Container(
@@ -106,7 +110,7 @@ class Home extends StatelessWidget {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => ikuScreen(),
+                                builder: (context) => IKU(),
                               ));
                         },
                         child: Container(
@@ -124,7 +128,7 @@ class Home extends StatelessWidget {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => listKendalaScreen(),
+                                builder: (context) => ListKendala(),
                               ));
                         },
                         child: Container(
