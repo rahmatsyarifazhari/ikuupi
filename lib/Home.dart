@@ -1,6 +1,6 @@
-
 import 'package:flutter/material.dart';
-import 'package:flutter_ikupi/Akreditasi.dart';
+
+import 'package:flutter_ikupi/Akreditas.dart';
 import 'package:flutter_ikupi/IKU.dart';
 import 'package:flutter_ikupi/listKendala.dart';
 import 'package:hexcolor/hexcolor.dart';
