@@ -50,135 +50,56 @@ class FPMIPA extends StatelessWidget {
                         decoration: BoxDecoration(
                             // border: Border.all(),
                             image: const DecorationImage(
-                                image: AssetImage("images/UPI.png"))),
+                                image: AssetImage("images/MATEMATIKA.png"))),
                         padding: const EdgeInsets.all(14),
                         margin: const EdgeInsets.all(20),
                         alignment: Alignment.bottomCenter,
-                        child: const Text(
-                          'Pendidikan Matematika',
-                          style: TextStyle(backgroundColor: Colors.white),
-                        ),
                       ),
                       Container(
                           decoration: BoxDecoration(
                               // border: Border.all(),
                               image: const DecorationImage(
-                                  image: AssetImage("images/UPI.png"))),
+                                  image: AssetImage("images/FISIKA.png"))),
                           padding: const EdgeInsets.all(14),
                           margin: const EdgeInsets.all(20),
                           alignment: Alignment.bottomCenter,
-                          child: const Text(
-                            'Pendidikan Fisika',
-                            style: TextStyle(backgroundColor: Colors.white),
-                          )),
+                         ),
                       Container(
                           decoration: BoxDecoration(
                               // border: Border.all(),
                               image: const DecorationImage(
-                                  image: AssetImage("images/UPI.png"))),
+                                  image: AssetImage("images/BIOLOGI.png"))),
                           padding: const EdgeInsets.all(14),
                           margin: const EdgeInsets.all(20),
                           alignment: Alignment.bottomCenter,
-                          child: const Text(
-                            'Pendidikan Biologi',
-                            style: TextStyle(backgroundColor: Colors.white),
-                          )),
+                          ),
                       Container(
                           decoration: BoxDecoration(
                               // border: Border.all(),
                               image: const DecorationImage(
-                                  image: AssetImage("images/UPI.png"))),
+                                  image: AssetImage("images/KIMIA.png"))),
                           padding: const EdgeInsets.all(14),
                           margin: const EdgeInsets.all(20),
                           alignment: Alignment.bottomCenter,
-                          child: const Text(
-                            'Pendidikan Kimia',
-                            style: TextStyle(backgroundColor: Colors.white),
-                          )),
+                          ),
                       Container(
                           decoration: BoxDecoration(
                               // border: Border.all(),
                               image: const DecorationImage(
-                                  image: AssetImage("images/UPI.png"))),
+                                  image: AssetImage("images/ILMUKOMPUTER.png"))),
                           padding: const EdgeInsets.all(14),
                           margin: const EdgeInsets.all(20),
                           alignment: Alignment.bottomCenter,
-                          child: const Text(
-                            'Pendidikan Ilmu Komputer',
-                            style: TextStyle(backgroundColor: Colors.white),
-                          )),
+                         ),
                       Container(
                           decoration: BoxDecoration(
                               // border: Border.all(),
                               image: const DecorationImage(
-                                  image: AssetImage("images/UPI.png"))),
+                                  image: AssetImage("images/IPSE.png"))),
                           padding: const EdgeInsets.all(14),
                           margin: const EdgeInsets.all(20),
                           alignment: Alignment.bottomCenter,
-                          child: const Text(
-                            'Matematika',
-                            style: TextStyle(backgroundColor: Colors.white),
-                          )),
-                      Container(
-                          decoration: BoxDecoration(
-                              // border: Border.all(),
-                              image: const DecorationImage(
-                                  image: AssetImage("images/UPI.png"))),
-                          padding: const EdgeInsets.all(14),
-                          margin: const EdgeInsets.all(20),
-                          alignment: Alignment.bottomCenter,
-                          child: const Text(
-                            'Fisika',
-                            style: TextStyle(backgroundColor: Colors.white),
-                          )),
-                      Container(
-                          decoration: BoxDecoration(
-                              // border: Border.all(),
-                              image: const DecorationImage(
-                                  image: AssetImage("images/UPI.png"))),
-                          padding: const EdgeInsets.all(14),
-                          margin: const EdgeInsets.all(20),
-                          alignment: Alignment.bottomCenter,
-                          child: const Text(
-                            'Biologi',
-                            style: TextStyle(backgroundColor: Colors.white),
-                          )),
-                      Container(
-                          decoration: BoxDecoration(
-                              // border: Border.all(),
-                              image: const DecorationImage(
-                                  image: AssetImage("images/UPI.png"))),
-                          padding: const EdgeInsets.all(14),
-                          margin: const EdgeInsets.all(20),
-                          alignment: Alignment.bottomCenter,
-                          child: const Text(
-                            'Kimia',
-                            style: TextStyle(backgroundColor: Colors.white),
-                          )),
-                      Container(
-                          decoration: BoxDecoration(
-                              // border: Border.all(),
-                              image: const DecorationImage(
-                                  image: AssetImage("images/UPI.png"))),
-                          padding: const EdgeInsets.all(14),
-                          margin: const EdgeInsets.all(20),
-                          alignment: Alignment.bottomCenter,
-                          child: const Text(
-                            'Ilmu Komputer',
-                            style: TextStyle(backgroundColor: Colors.white),
-                          )),
-                      Container(
-                          decoration: BoxDecoration(
-                              // border: Border.all(),
-                              image: const DecorationImage(
-                                  image: AssetImage("images/UPI.png"))),
-                          padding: const EdgeInsets.all(14),
-                          margin: const EdgeInsets.all(20),
-                          alignment: Alignment.bottomCenter,
-                          child: const Text(
-                            'IPSE',
-                            style: TextStyle(backgroundColor: Colors.white),
-                          )),
+                          ),
                     ]),
               )
             ],

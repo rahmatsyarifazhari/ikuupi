@@ -42,14 +42,10 @@ class IKU extends StatelessWidget {
                       decoration: BoxDecoration(
                           // border: Border.all(),
                           image: const DecorationImage(
-                              image: AssetImage("images/UPI.png"))),
+                              image: AssetImage("images/FPMIPA.png"))),
                       padding: const EdgeInsets.all(14),
                       margin: const EdgeInsets.all(20),
                       alignment: Alignment.bottomCenter,
-                      child: const Text(
-                        'FPMIPA',
-                        style: TextStyle(backgroundColor: Colors.white),
-                      ),
                     ),
                     onTap: () {
                       Navigator.of(context)
@@ -71,14 +67,11 @@ class IKU extends StatelessWidget {
                         decoration: BoxDecoration(
                             // border: Border.all(),
                             image: const DecorationImage(
-                                image: AssetImage("images/UPI.png"))),
+                                image: AssetImage("images/FPIPS.png"))),
                         padding: const EdgeInsets.all(14),
                         margin: const EdgeInsets.all(20),
                         alignment: Alignment.bottomCenter,
-                        child: const Text(
-                          'FPIPS',
-                          style: TextStyle(backgroundColor: Colors.white),
-                        )),
+                        ),
                     onTap: () {
                       Navigator.of(context)
                           .push(MaterialPageRoute(builder: (context) {
@@ -91,14 +84,11 @@ class IKU extends StatelessWidget {
                         decoration: BoxDecoration(
                             // border: Border.all(),
                             image: const DecorationImage(
-                                image: AssetImage("images/UPI.png"))),
+                                image: AssetImage("images/FIP.png"))),
                         padding: const EdgeInsets.all(14),
                         margin: const EdgeInsets.all(20),
                         alignment: Alignment.bottomCenter,
-                        child: const Text(
-                          'FIP',
-                          style: TextStyle(backgroundColor: Colors.white),
-                        )),
+                        ),
                     onTap: () {
                       Navigator.of(context)
                           .push(MaterialPageRoute(builder: (context) {
@@ -110,14 +100,56 @@ class IKU extends StatelessWidget {
                       decoration: BoxDecoration(
                           // border: Border.all(),
                           image: const DecorationImage(
-                              image: AssetImage("images/UPI.png"))),
+                              image: AssetImage("images/FPBS.png"))),
                       padding: const EdgeInsets.all(14),
                       margin: const EdgeInsets.all(20),
                       alignment: Alignment.bottomCenter,
-                      child: const Text(
-                        'FPBS',
-                        style: TextStyle(backgroundColor: Colors.white),
-                      )),
+                      ),
+                  Container(
+                      decoration: BoxDecoration(
+                          // border: Border.all(),
+                          image: const DecorationImage(
+                              image: AssetImage("images/FPSD.png"))),
+                      padding: const EdgeInsets.all(14),
+                      margin: const EdgeInsets.all(20),
+                      alignment: Alignment.bottomCenter,
+                      ),
+                  Container(
+                      decoration: BoxDecoration(
+                          // border: Border.all(),
+                          image: const DecorationImage(
+                              image: AssetImage("images/FPTK.png"))),
+                      padding: const EdgeInsets.all(14),
+                      margin: const EdgeInsets.all(20),
+                      alignment: Alignment.bottomCenter,
+                      ),
+                  Container(
+                      decoration: BoxDecoration(
+                          // border: Border.all(),
+                          image: const DecorationImage(
+                              image: AssetImage("images/FPOK.png"))),
+                      padding: const EdgeInsets.all(14),
+                      margin: const EdgeInsets.all(20),
+                      alignment: Alignment.bottomCenter,
+                      ),
+                  Container(
+                      decoration: BoxDecoration(
+                          // border: Border.all(),
+                          image: const DecorationImage(
+                              image: AssetImage("images/FPEB.png"))),
+                      padding: const EdgeInsets.all(14),
+                      margin: const EdgeInsets.all(20),
+                      alignment: Alignment.bottomCenter,
+                      ),
+                  Container(
+                      decoration: BoxDecoration(
+                          // border: Border.all(),
+                          image: const DecorationImage(
+                              image: AssetImage("images/KDCIBIRU.PNG"))),
+                      padding: const EdgeInsets.all(14),
+                      margin: const EdgeInsets.all(20),
+                      alignment: Alignment.bottomCenter,
+                      ),
                   Container(
                       decoration: BoxDecoration(
                           // border: Border.all(),
@@ -125,70 +157,10 @@ class IKU extends StatelessWidget {
                               image: AssetImage("images/UPI.png"))),
                       padding: const EdgeInsets.all(14),
                       margin: const EdgeInsets.all(20),
-                      alignment: Alignment.bottomCenter,
-                      child: const Text(
-                        'FPSD',
-                        style: TextStyle(backgroundColor: Colors.white),
-                      )),
-                  Container(
-                      decoration: BoxDecoration(
-                          // border: Border.all(),
-                          image: const DecorationImage(
-                              image: AssetImage("images/UPI.png"))),
-                      padding: const EdgeInsets.all(14),
-                      margin: const EdgeInsets.all(20),
-                      alignment: Alignment.bottomCenter,
-                      child: const Text(
-                        'FPTK',
-                        style: TextStyle(backgroundColor: Colors.white),
-                      )),
-                  Container(
-                      decoration: BoxDecoration(
-                          // border: Border.all(),
-                          image: const DecorationImage(
-                              image: AssetImage("images/UPI.png"))),
-                      padding: const EdgeInsets.all(14),
-                      margin: const EdgeInsets.all(20),
-                      alignment: Alignment.bottomCenter,
-                      child: const Text(
-                        'FPOK',
-                        style: TextStyle(backgroundColor: Colors.white),
-                      )),
-                  Container(
-                      decoration: BoxDecoration(
-                          // border: Border.all(),
-                          image: const DecorationImage(
-                              image: AssetImage("images/UPI.png"))),
-                      padding: const EdgeInsets.all(14),
-                      margin: const EdgeInsets.all(20),
-                      alignment: Alignment.bottomCenter,
-                      child: const Text(
-                        'FPEB',
-                        style: TextStyle(backgroundColor: Colors.white),
-                      )),
-                  Container(
-                      decoration: BoxDecoration(
-                          // border: Border.all(),
-                          image: const DecorationImage(
-                              image: AssetImage("images/UPI.png"))),
-                      padding: const EdgeInsets.all(14),
-                      margin: const EdgeInsets.all(20),
-                      alignment: Alignment.bottomCenter,
-                      child: const Text(
-                        'K.D CIBIRU',
-                        style: TextStyle(backgroundColor: Colors.white),
-                      )),
-                  Container(
-                      decoration: BoxDecoration(
-                          // border: Border.all(),
-                          image: const DecorationImage(
-                              image: AssetImage("images/UPI.png"))),
-                      padding: const EdgeInsets.all(14),
-                      margin: const EdgeInsets.all(20),
-                      alignment: Alignment.bottomCenter,
+                      alignment: Alignment.center,
                       child: const Text(
                         'K.D SUMEDANG',
-                        style: TextStyle(backgroundColor: Colors.white),
+                        style: TextStyle(fontWeight : FontWeight.bold, backgroundColor: Colors.white),
                       )),
                   Container(
                       decoration: BoxDecoration(
@@ -197,35 +169,29 @@ class IKU extends StatelessWidget {
                               image: AssetImage("images/UPI.png"))),
                       padding: const EdgeInsets.all(14),
                       margin: const EdgeInsets.all(20),
-                      alignment: Alignment.bottomCenter,
+                      alignment: Alignment.center,
                       child: const Text(
                         'K.D TASIKMALAYA',
-                        style: TextStyle(backgroundColor: Colors.white),
+                        style: TextStyle(fontWeight : FontWeight.bold, backgroundColor: Colors.white),
                       )),
                   Container(
                       decoration: BoxDecoration(
                           // border: Border.all(),
                           image: const DecorationImage(
-                              image: AssetImage("images/UPI.png"))),
+                              image: AssetImage("images/KDPURWAKARTA.png"))),
                       padding: const EdgeInsets.all(14),
                       margin: const EdgeInsets.all(20),
                       alignment: Alignment.bottomCenter,
-                      child: const Text(
-                        'K.D PURWAKARTA',
-                        style: TextStyle(backgroundColor: Colors.white),
-                      )),
+                      ),
                   Container(
                       decoration: BoxDecoration(
                           // border: Border.all(),
                           image: const DecorationImage(
-                              image: AssetImage("images/UPI.png"))),
+                              image: AssetImage("images/KDSERANG.png"))),
                       padding: const EdgeInsets.all(14),
                       margin: const EdgeInsets.all(20),
                       alignment: Alignment.bottomCenter,
-                      child: const Text(
-                        'K.D SERANG',
-                        style: TextStyle(backgroundColor: Colors.white),
-                      )),
+                     ),
                 ]),
           )
         ],

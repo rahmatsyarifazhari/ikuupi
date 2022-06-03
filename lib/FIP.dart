@@ -63,13 +63,13 @@ class FIP extends StatelessWidget {
                           decoration: BoxDecoration(
                               // border: Border.all(),
                               image: const DecorationImage(
-                                  image: AssetImage("images/UPI.png"))),
+                                  image: AssetImage("images/ADPEN.png"))),
                           padding: const EdgeInsets.all(14),
                           margin: const EdgeInsets.all(20),
                           alignment: Alignment.bottomCenter,
                           child: const Text(
                             'Administrasi Pendidikan',
-                            style: TextStyle(backgroundColor: Colors.white),
+                            style: TextStyle(fontWeight: FontWeight.bold, backgroundColor: Colors.white),
                           )),
                       Container(
                           decoration: BoxDecoration(
@@ -99,50 +99,38 @@ class FIP extends StatelessWidget {
                           decoration: BoxDecoration(
                               // border: Border.all(),
                               image: const DecorationImage(
-                                  image: AssetImage("images/UPI.png"))),
+                                  image: AssetImage("images/TEKPEN.png"))),
                           padding: const EdgeInsets.all(14),
                           margin: const EdgeInsets.all(20),
                           alignment: Alignment.bottomCenter,
-                          child: const Text(
-                            'Teknologi Pendidikan',
-                            style: TextStyle(backgroundColor: Colors.white),
-                          )),
+                          ),
                       Container(
                           decoration: BoxDecoration(
                               // border: Border.all(),
                               image: const DecorationImage(
-                                  image: AssetImage("images/UPI.png"))),
+                                  image: AssetImage("images/PGSDBUMSIL.png"))),
                           padding: const EdgeInsets.all(14),
                           margin: const EdgeInsets.all(20),
                           alignment: Alignment.bottomCenter,
-                          child: const Text(
-                            'PGSD Bumi Siliwangi',
-                            style: TextStyle(backgroundColor: Colors.white),
-                          )),
+                          ),
                       Container(
                           decoration: BoxDecoration(
                               // border: Border.all(),
                               image: const DecorationImage(
-                                  image: AssetImage("images/UPI.png"))),
+                                  image: AssetImage("images/PGPAUDBUMSIL.png"))),
                           padding: const EdgeInsets.all(14),
                           margin: const EdgeInsets.all(20),
                           alignment: Alignment.bottomCenter,
-                          child: const Text(
-                            'PGPAUD Bumi Siliwangi',
-                            style: TextStyle(backgroundColor: Colors.white),
-                          )),
+                          ),
                       Container(
                           decoration: BoxDecoration(
                               // border: Border.all(),
                               image: const DecorationImage(
-                                  image: AssetImage("images/UPI.png"))),
+                                  image: AssetImage("images/PSIKOLOGI.png"))),
                           padding: const EdgeInsets.all(14),
                           margin: const EdgeInsets.all(20),
                           alignment: Alignment.bottomCenter,
-                          child: const Text(
-                            'Psikologi',
-                            style: TextStyle(backgroundColor: Colors.white),
-                          )),
+                         ),
                       Container(
                           decoration: BoxDecoration(
                               // border: Border.all(),

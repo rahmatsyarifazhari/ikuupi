@@ -53,27 +53,29 @@ class FPIPS extends StatelessWidget {
                         decoration: BoxDecoration(
                             // border: Border.all(),
                             image: const DecorationImage(
-                                image: AssetImage("images/UPI.png"))),
+                                image: AssetImage("images/PKN.png"))),
                         padding: const EdgeInsets.all(14),
                         margin: const EdgeInsets.all(20),
                         alignment: Alignment.bottomCenter,
-                        child: const Text(
-                          'Pendidikan Kewarganegaraan',
-                          style: TextStyle(backgroundColor: Colors.white),
-                        ),
                       ),
                       Container(
                           decoration: BoxDecoration(
                               // border: Border.all(),
                               image: const DecorationImage(
-                                  image: AssetImage("images/UPI.png"))),
+                                  image: AssetImage("images/SEJARAH.png"))),
                           padding: const EdgeInsets.all(14),
                           margin: const EdgeInsets.all(20),
                           alignment: Alignment.bottomCenter,
-                          child: const Text(
-                            'Pendidikan Sejarah',
-                            style: TextStyle(backgroundColor: Colors.white),
-                          )),
+                          ),
+                      Container(
+                          decoration: BoxDecoration(
+                              // border: Border.all(),
+                              image: const DecorationImage(
+                                  image: AssetImage("images/GEOGRAFI.png"))),
+                          padding: const EdgeInsets.all(14),
+                          margin: const EdgeInsets.all(20),
+                          alignment: Alignment.bottomCenter,
+                          ),
                       Container(
                           decoration: BoxDecoration(
                               // border: Border.all(),
@@ -83,93 +85,64 @@ class FPIPS extends StatelessWidget {
                           margin: const EdgeInsets.all(20),
                           alignment: Alignment.bottomCenter,
                           child: const Text(
-                            'Pendidikan Geografi',
-                            style: TextStyle(backgroundColor: Colors.white),
-                          )),
+                            'Pendidikan Agama Islam',
+                            style: TextStyle(fontWeight: FontWeight.bold, backgroundColor: Colors.white),
+                          )
+                          ),
                       Container(
                           decoration: BoxDecoration(
                               // border: Border.all(),
                               image: const DecorationImage(
-                                  image: AssetImage("images/UPI.png"))),
+                                  image: AssetImage("images/MRL.png"))),
                           padding: const EdgeInsets.all(14),
                           margin: const EdgeInsets.all(20),
                           alignment: Alignment.bottomCenter,
-                          child: const Text(
-                            'llmu Pendidikan Agama Islam',
-                            style: TextStyle(backgroundColor: Colors.white),
-                          )),
+                          ),
                       Container(
                           decoration: BoxDecoration(
                               // border: Border.all(),
                               image: const DecorationImage(
-                                  image: AssetImage("images/UPI.png"))),
+                                  image: AssetImage("images/MPP.png"))),
                           padding: const EdgeInsets.all(14),
                           margin: const EdgeInsets.all(20),
                           alignment: Alignment.bottomCenter,
-                          child: const Text(
-                            'Manajemen Resort & Leisure',
-                            style: TextStyle(backgroundColor: Colors.white),
-                          )),
+                         ),
                       Container(
                           decoration: BoxDecoration(
                               // border: Border.all(),
                               image: const DecorationImage(
-                                  image: AssetImage("images/UPI.png"))),
+                                  image: AssetImage("images/MIKA.png"))),
                           padding: const EdgeInsets.all(14),
                           margin: const EdgeInsets.all(20),
                           alignment: Alignment.bottomCenter,
-                          child: const Text(
-                            'Manajemen Pemasaran Pariwisata',
-                            style: TextStyle(backgroundColor: Colors.white),
-                          )),
+                         ),
                       Container(
                           decoration: BoxDecoration(
                               // border: Border.all(),
                               image: const DecorationImage(
-                                  image: AssetImage("images/UPI.png"))),
+                                  image: AssetImage("images/IPS.png"))),
                           padding: const EdgeInsets.all(14),
                           margin: const EdgeInsets.all(20),
                           alignment: Alignment.bottomCenter,
-                          child: const Text(
-                            'Manajemen Industri Katering',
-                            style: TextStyle(backgroundColor: Colors.white),
-                          )),
+                         ),
                       Container(
                           decoration: BoxDecoration(
                               // border: Border.all(),
                               image: const DecorationImage(
-                                  image: AssetImage("images/UPI.png"))),
+                                  image: AssetImage("images/ILMUKOMUNIKASI.png"))),
                           padding: const EdgeInsets.all(14),
                           margin: const EdgeInsets.all(20),
                           alignment: Alignment.bottomCenter,
-                          child: const Text(
-                            'Pendidikan Ilmu Pengetahuan Sosial',
-                            style: TextStyle(backgroundColor: Colors.white),
-                          )),
+                         ),
                       Container(
                           decoration: BoxDecoration(
                               // border: Border.all(),
                               image: const DecorationImage(
-                                  image: AssetImage("images/UPI.png"))),
+                                  image: AssetImage("images/SOSIOLOGI.png"))),
                           padding: const EdgeInsets.all(14),
                           margin: const EdgeInsets.all(20),
                           alignment: Alignment.bottomCenter,
-                          child: const Text(
-                            'Ilmu Komunikasi',
-                            style: TextStyle(backgroundColor: Colors.white),
-                          )),
-                      Container(
-                          decoration: BoxDecoration(
-                              // border: Border.all(),
-                              image: const DecorationImage(
-                                  image: AssetImage("images/UPI.png"))),
-                          padding: const EdgeInsets.all(14),
-                          margin: const EdgeInsets.all(20),
-                          alignment: Alignment.bottomCenter,
-                          child: const Text(
-                            'Pendidikan Sosiologi',
-                            style: TextStyle(backgroundColor: Colors.white),
-                          )),
+                         ),
                     ]),
               )
             ],
