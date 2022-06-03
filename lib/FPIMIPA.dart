@@ -50,7 +50,7 @@ class FPMIPA extends StatelessWidget {
                         decoration: BoxDecoration(
                             // border: Border.all(),
                             image: const DecorationImage(
-                                image: AssetImage("images/MATEMATIKA.png"))),
+                                image: AssetImage("images/ILMUKOMPUTER.png"))),
                         padding: const EdgeInsets.all(14),
                         margin: const EdgeInsets.all(20),
                         alignment: Alignment.bottomCenter,
@@ -86,7 +86,7 @@ class FPMIPA extends StatelessWidget {
                           decoration: BoxDecoration(
                               // border: Border.all(),
                               image: const DecorationImage(
-                                  image: AssetImage("images/ILMUKOMPUTER.png"))),
+                                  image: AssetImage("images/MATEMATIKA.png"))),
                           padding: const EdgeInsets.all(14),
                           margin: const EdgeInsets.all(20),
                           alignment: Alignment.bottomCenter,
