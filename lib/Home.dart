@@ -4,6 +4,7 @@ import 'package:iku_application/Akreditasi.dart';
 import 'package:iku_application/IKU.dart';
 import 'package:iku_application/listKendala.dart';
 import 'package:hexcolor/hexcolor.dart';
+import 'package:iku_application/Navigasi.dart';
 
 void main() {
   runApp(const Home());
@@ -83,7 +84,7 @@ class Home extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      GestureDetector(
+                      InkWell(
                         onTap: () {
                           Navigator.push(
                               context,
@@ -105,7 +106,7 @@ class Home extends StatelessWidget {
                           )),
                         ),
                       ),
-                      GestureDetector(
+                      InkWell(
                         onTap: () {
                           Navigator.push(
                               context,
@@ -123,7 +124,7 @@ class Home extends StatelessWidget {
                           child: const Center(child: Text('IKU')),
                         ),
                       ),
-                      GestureDetector(
+                      InkWell(
                         onTap: () {
                           Navigator.push(
                               context,
