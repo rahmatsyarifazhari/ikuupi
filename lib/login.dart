@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:iku_application/Home.dart';
 
 void main() {
   runApp(const Login());
@@ -75,8 +76,17 @@ class MyAppState extends State<Login> {
                     padding:
                         const EdgeInsets.all(30), //padding 50px ke semua arah
                     child: ElevatedButton(
+                      // onTap: () {
+                      // Navigator.of(context)
+                      //     .push(MaterialPageRoute(builder: (context) {
+                      //   return FPMIPA();
+                      // }));}
                       onPressed: () {
                         setState(() {
+                          Navigator.of(context)
+                              .push(MaterialPageRoute(builder: (context) {
+                            return Home();
+                          }));
                           // _nama = textEditController.text;
                         }); //refresh
                       },
