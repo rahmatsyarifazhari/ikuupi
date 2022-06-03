@@ -35,7 +35,7 @@ class MyAppState extends State<Navigasi> {
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Scaffold(
-      appBar: AppBar(title: const Text("IKU UPI")),
+      // appBar: AppBar(title: const Text("IKU UPI")),
       body: case2(idx),
       bottomNavigationBar: BottomNavigationBar(
           currentIndex: idx,
