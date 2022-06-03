@@ -110,7 +110,7 @@ class Home extends StatelessWidget {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => IKU(),
+                                builder: (context) => Navigasi(),
                               ));
                         },
                         child: Container(
