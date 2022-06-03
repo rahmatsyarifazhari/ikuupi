@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'IKU.dart';
+import 'package:hexcolor/hexcolor.dart';
 
 void main() {
   runApp(const FPMIPA());
@@ -14,10 +15,11 @@ class FPMIPA extends StatelessWidget {
       title: 'GRID',
       home: Scaffold(
           appBar: AppBar(
-            leading: GestureDetector(
+            backgroundColor: HexColor("#E45826"),
+            leading: InkWell(
               child: Icon(
                 Icons.arrow_back_ios,
-                color: Colors.black,
+                color: Colors.white,
               ),
               onTap: () {
                 Navigator.pop(context);
@@ -56,50 +58,50 @@ class FPMIPA extends StatelessWidget {
                         alignment: Alignment.bottomCenter,
                       ),
                       Container(
-                          decoration: BoxDecoration(
-                              // border: Border.all(),
-                              image: const DecorationImage(
-                                  image: AssetImage("images/FISIKA.png"))),
-                          padding: const EdgeInsets.all(14),
-                          margin: const EdgeInsets.all(20),
-                          alignment: Alignment.bottomCenter,
-                         ),
+                        decoration: BoxDecoration(
+                            // border: Border.all(),
+                            image: const DecorationImage(
+                                image: AssetImage("images/FISIKA.png"))),
+                        padding: const EdgeInsets.all(14),
+                        margin: const EdgeInsets.all(20),
+                        alignment: Alignment.bottomCenter,
+                      ),
                       Container(
-                          decoration: BoxDecoration(
-                              // border: Border.all(),
-                              image: const DecorationImage(
-                                  image: AssetImage("images/BIOLOGI.png"))),
-                          padding: const EdgeInsets.all(14),
-                          margin: const EdgeInsets.all(20),
-                          alignment: Alignment.bottomCenter,
-                          ),
+                        decoration: BoxDecoration(
+                            // border: Border.all(),
+                            image: const DecorationImage(
+                                image: AssetImage("images/BIOLOGI.png"))),
+                        padding: const EdgeInsets.all(14),
+                        margin: const EdgeInsets.all(20),
+                        alignment: Alignment.bottomCenter,
+                      ),
                       Container(
-                          decoration: BoxDecoration(
-                              // border: Border.all(),
-                              image: const DecorationImage(
-                                  image: AssetImage("images/KIMIA.png"))),
-                          padding: const EdgeInsets.all(14),
-                          margin: const EdgeInsets.all(20),
-                          alignment: Alignment.bottomCenter,
-                          ),
+                        decoration: BoxDecoration(
+                            // border: Border.all(),
+                            image: const DecorationImage(
+                                image: AssetImage("images/KIMIA.png"))),
+                        padding: const EdgeInsets.all(14),
+                        margin: const EdgeInsets.all(20),
+                        alignment: Alignment.bottomCenter,
+                      ),
                       Container(
-                          decoration: BoxDecoration(
-                              // border: Border.all(),
-                              image: const DecorationImage(
-                                  image: AssetImage("images/MATEMATIKA.png"))),
-                          padding: const EdgeInsets.all(14),
-                          margin: const EdgeInsets.all(20),
-                          alignment: Alignment.bottomCenter,
-                         ),
+                        decoration: BoxDecoration(
+                            // border: Border.all(),
+                            image: const DecorationImage(
+                                image: AssetImage("images/MATEMATIKA.png"))),
+                        padding: const EdgeInsets.all(14),
+                        margin: const EdgeInsets.all(20),
+                        alignment: Alignment.bottomCenter,
+                      ),
                       Container(
-                          decoration: BoxDecoration(
-                              // border: Border.all(),
-                              image: const DecorationImage(
-                                  image: AssetImage("images/IPSE.png"))),
-                          padding: const EdgeInsets.all(14),
-                          margin: const EdgeInsets.all(20),
-                          alignment: Alignment.bottomCenter,
-                          ),
+                        decoration: BoxDecoration(
+                            // border: Border.all(),
+                            image: const DecorationImage(
+                                image: AssetImage("images/IPSE.png"))),
+                        padding: const EdgeInsets.all(14),
+                        margin: const EdgeInsets.all(20),
+                        alignment: Alignment.bottomCenter,
+                      ),
                     ]),
               )
             ],
