@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'FPIMIPA.dart';
+import 'package:hexcolor/hexcolor.dart';
 
 
 void main() {
@@ -25,6 +26,7 @@ class Kemakom extends StatelessWidget {
               },
             ),
             centerTitle: true,
+            backgroundColor: HexColor("#E45826"),
             title: const Text('Progress dan Kendala IKU'),
           ),
           body: Stack(children: [

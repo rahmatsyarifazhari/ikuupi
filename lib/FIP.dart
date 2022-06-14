@@ -15,17 +15,17 @@ class FIP extends StatelessWidget {
       title: 'GRID',
       home: Scaffold(
           appBar: AppBar(
-            backgroundColor: HexColor("#E45826"),
-            leading: InkWell(
+            leading: GestureDetector(
               child: Icon(
                 Icons.arrow_back_ios,
-                color: Colors.white,
+                color: Colors.black,
               ),
               onTap: () {
                 Navigator.pop(context);
               },
             ),
             centerTitle: true,
+            backgroundColor: HexColor("#E45826"),
             title: const Text('FIP'),
           ),
           body: Stack(
@@ -71,9 +71,7 @@ class FIP extends StatelessWidget {
                           alignment: Alignment.bottomCenter,
                           child: const Text(
                             'Administrasi Pendidikan',
-                            style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                backgroundColor: Colors.white),
+                            style: TextStyle(fontWeight: FontWeight.bold, backgroundColor: Colors.white),
                           )),
                       Container(
                           decoration: BoxDecoration(
@@ -100,41 +98,41 @@ class FIP extends StatelessWidget {
                             style: TextStyle(backgroundColor: Colors.white),
                           )),
                       Container(
-                        decoration: BoxDecoration(
-                            // border: Border.all(),
-                            image: const DecorationImage(
-                                image: AssetImage("images/TEKPEN.png"))),
-                        padding: const EdgeInsets.all(14),
-                        margin: const EdgeInsets.all(20),
-                        alignment: Alignment.bottomCenter,
-                      ),
+                          decoration: BoxDecoration(
+                              // border: Border.all(),
+                              image: const DecorationImage(
+                                  image: AssetImage("images/TEKPEN.png"))),
+                          padding: const EdgeInsets.all(14),
+                          margin: const EdgeInsets.all(20),
+                          alignment: Alignment.bottomCenter,
+                          ),
                       Container(
-                        decoration: BoxDecoration(
-                            // border: Border.all(),
-                            image: const DecorationImage(
-                                image: AssetImage("images/PGSDBUMSIL.png"))),
-                        padding: const EdgeInsets.all(14),
-                        margin: const EdgeInsets.all(20),
-                        alignment: Alignment.bottomCenter,
-                      ),
+                          decoration: BoxDecoration(
+                              // border: Border.all(),
+                              image: const DecorationImage(
+                                  image: AssetImage("images/PGSDBUMSIL.png"))),
+                          padding: const EdgeInsets.all(14),
+                          margin: const EdgeInsets.all(20),
+                          alignment: Alignment.bottomCenter,
+                          ),
                       Container(
-                        decoration: BoxDecoration(
-                            // border: Border.all(),
-                            image: const DecorationImage(
-                                image: AssetImage("images/PGPAUDBUMSIL.png"))),
-                        padding: const EdgeInsets.all(14),
-                        margin: const EdgeInsets.all(20),
-                        alignment: Alignment.bottomCenter,
-                      ),
+                          decoration: BoxDecoration(
+                              // border: Border.all(),
+                              image: const DecorationImage(
+                                  image: AssetImage("images/PGPAUDBUMSIL.png"))),
+                          padding: const EdgeInsets.all(14),
+                          margin: const EdgeInsets.all(20),
+                          alignment: Alignment.bottomCenter,
+                          ),
                       Container(
-                        decoration: BoxDecoration(
-                            // border: Border.all(),
-                            image: const DecorationImage(
-                                image: AssetImage("images/PSIKOLOGI.png"))),
-                        padding: const EdgeInsets.all(14),
-                        margin: const EdgeInsets.all(20),
-                        alignment: Alignment.bottomCenter,
-                      ),
+                          decoration: BoxDecoration(
+                              // border: Border.all(),
+                              image: const DecorationImage(
+                                  image: AssetImage("images/PSIKOLOGI.png"))),
+                          padding: const EdgeInsets.all(14),
+                          margin: const EdgeInsets.all(20),
+                          alignment: Alignment.bottomCenter,
+                         ),
                       Container(
                           decoration: BoxDecoration(
                               // border: Border.all(),

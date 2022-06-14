@@ -27,6 +27,7 @@ class FPMIPA extends StatelessWidget {
               },
             ),
             centerTitle: true,
+            backgroundColor: HexColor("#E45826"),
             title: const Text('FPMIPA'),
           ),
           body: Stack(
