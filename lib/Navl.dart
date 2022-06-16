@@ -3,8 +3,8 @@ import 'dart:js';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:iku_application/Akreditasi.dart';
-import 'package:iku_application/FIP.dart';
-import 'package:iku_application/FPIMIPA.dart';
+import 'package:iku_application/fakultas/FIP.dart';
+import 'package:iku_application/fakultas/FPIMIPA.dart';
 import 'package:iku_application/IKU.dart';
 import 'package:iku_application/ListKendala.dart';
 import 'package:iku_application/Splash.dart';
@@ -54,17 +54,17 @@ class MyAppState extends State<Navl> {
 
   case2(int idx) {
     switch (idx) {
-      // case 0:
-      //   {
-      //     return const Akreditasi();
-      //   }
+      case 0:
+        {
+          return Akr();
+        }
       case 1:
         {
           return const IKU();
         }
       case 2:
         {
-          return const ListKendala();
+          return ListKendala();
         }
     }
   }

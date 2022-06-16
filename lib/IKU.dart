@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:iku_application/Home.dart';
-import 'FPIMIPA.dart';
-import 'FIP.dart';
-import 'FPIPS.dart';
+import 'fakultas/FPIMIPA.dart';
+import 'fakultas/FIP.dart';
+import 'fakultas/FPIPS.dart';
 
 void main() {
   runApp(const IKU());

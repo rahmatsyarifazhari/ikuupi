@@ -2,7 +2,7 @@ import 'dart:js';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:iku_application/FIP.dart';
+import 'package:iku_application/fakultas/FIP.dart';
 import 'package:iku_application/Home.dart';
 import 'package:iku_application/IKU.dart';
 import 'package:iku_application/Navi.dart';
