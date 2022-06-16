@@ -3,7 +3,6 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:iku_application/Home.dart';
 import 'package:iku_application/login.dart';
-import 'package:iku_application/Navigasi.dart';
 import 'package:iku_application/Progress.dart';
 import 'package:iku_application/login.dart';
 

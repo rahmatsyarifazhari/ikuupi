@@ -10,19 +10,19 @@ import 'package:iku_application/ListKendala.dart';
 import 'package:iku_application/Splash.dart';
 
 void main() {
-  runApp(const Navigasi());
+  runApp(const Nava());
 }
 
-class Navigasi extends StatefulWidget {
-  const Navigasi({Key? key}) : super(key: key);
+class Nava extends StatefulWidget {
+  const Nava({Key? key}) : super(key: key);
   @override
   MyAppState createState() {
     return MyAppState();
   }
 }
 
-class MyAppState extends State<Navigasi> {
-  int idx = 1; //index yang aktif
+class MyAppState extends State<Nava> {
+  int idx = 0; //index yang aktif
 
   //event saat button di-tap
   void onItemTap(int index) {
@@ -56,7 +56,7 @@ class MyAppState extends State<Navigasi> {
     switch (idx) {
       case 0:
         {
-          return const Akreditasi();
+          return Akr();
         }
       case 1:
         {

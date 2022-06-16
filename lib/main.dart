@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 import 'package:iku_application/FIP.dart';
 import 'package:iku_application/Home.dart';
 import 'package:iku_application/IKU.dart';
-import 'package:iku_application/Navigasi.dart';
+import 'package:iku_application/Navi.dart';
 import 'package:iku_application/splash.dart';
 import 'package:iku_application/login.dart';
 import 'package:iku_application/splash.dart';

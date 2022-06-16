@@ -4,7 +4,9 @@ import 'package:iku_application/Akreditasi.dart';
 import 'package:iku_application/IKU.dart';
 import 'package:iku_application/listKendala.dart';
 import 'package:hexcolor/hexcolor.dart';
-import 'package:iku_application/Navigasi.dart';
+import 'package:iku_application/Nava.dart';
+import 'package:iku_application/Navi.dart';
+import 'package:iku_application/Navl.dart';
 
 void main() {
   runApp(const Home());
@@ -89,7 +91,7 @@ class Home extends StatelessWidget {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => Akreditasi(),
+                                builder: (context) => Nava(),
                               ));
                         },
                         child: Container(
@@ -111,7 +113,7 @@ class Home extends StatelessWidget {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => Navigasi(),
+                                builder: (context) => Navi(),
                               ));
                         },
                         child: Container(
@@ -126,11 +128,12 @@ class Home extends StatelessWidget {
                       ),
                       InkWell(
                         onTap: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => ListKendala(),
-                              ));
+                          Navigator.push(context, MaterialPageRoute(
+                            builder: (context) {
+                              var navigasi = Navl();
+                              return navigasi;
+                            },
+                          ));
                         },
                         child: Container(
                           width: 110,
