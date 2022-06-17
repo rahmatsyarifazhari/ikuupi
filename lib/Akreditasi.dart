@@ -4,6 +4,7 @@ import 'package:hexcolor/hexcolor.dart';
 import 'Home.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
+import 'package:json_table/json_table.dart';
 
 class Akre {
   int no;
@@ -124,15 +125,15 @@ class AkrState extends State<Akr> {
                           itemBuilder: (context, index) {
                             return Container(
                                 decoration: BoxDecoration(border: Border.all()),
-                                padding: const EdgeInsets.all(14),
+                                // padding: const EdgeInsets.all(14),
                                 child: Row(
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
                                       Container(
-                                        padding: EdgeInsets.all(15),
-                                        margin: EdgeInsets.only(right: 100),
-                                        decoration:
-                                            BoxDecoration(border: Border.all()),
+                                        // padding: EdgeInsets.all(15),
+                                        // margin: EdgeInsets.only(right: 100),
+                                        // decoration:
+                                        //     BoxDecoration(border: Border.all()),
                                         child: Text(snapshot
                                             .data!.ListPop[index].no
                                             .toString()),
@@ -159,86 +160,3 @@ class AkrState extends State<Akr> {
             ])));
   }
 }
-
-// void main() {
-//   runApp(const Akreditasi());
-// }
-
-// class Akreditasi extends StatelessWidget {
-//   const Akreditasi({Key? key}) : super(key: key);
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return MaterialApp(
-//       title: 'Akreditasi',
-//       home: Scaffold(
-//           appBar: AppBar(
-//             leading: InkWell(
-//               child: Icon(
-//                 Icons.home,
-//                 color: Colors.white,
-//               ),
-//               onTap: () {
-//                 // Navigator.pop(context);
-//                 Navigator.of(context)
-//                     .push(MaterialPageRoute(builder: (context) {
-//                   return Home();
-//                 }));
-//               },
-//             ),
-//             centerTitle: true,
-//             backgroundColor: HexColor("#E45826"),
-//             title: const Text("Akreditasi"),
-//           ),
-//           body: Stack(children: [
-//             Container(
-//               height: double.infinity,
-//               decoration: BoxDecoration(
-//                   image: DecorationImage(
-//                 fit: BoxFit.cover,
-//                 image: const AssetImage("images/isola.jpg"),
-//                 colorFilter: ColorFilter.mode(
-//                     Colors.black.withOpacity(0.2), BlendMode.dstATop),
-//               )),
-//             ),
-//             Center(
-//             child: FutureBuilder<AKREDITASI>(
-//               future: futureAKREDITASI,
-//               builder: (context, snapshot) {
-//                 if (snapshot.hasData) {
-//                   return Center(
-//                     //gunakan listview builder
-//                     child: ListView.builder(
-//                       itemCount: snapshot
-//                           .data!.ListPop.length, //asumsikan data ada isi
-//                       itemBuilder: (context, index) {
-//                         return Container(
-//                             decoration: BoxDecoration(border: Border.all()),
-//                             padding: const EdgeInsets.all(14),
-//                             child: Column(
-//                                 mainAxisAlignment: MainAxisAlignment.center,
-//                                 children: [
-//                                   Text(snapshot.data!.ListPop[index].no
-//                                       .toString()),
-//                                   Text(snapshot.data!.ListPop[index].jurusan
-//                                       .toString()),
-//                                   Text(snapshot.data!.ListPop[index].jenjang
-//                                       .toString()),
-//                                   Text(snapshot.data!.ListPop[index].akreditasi
-//                                       .toString()),
-//                                 ]));
-//                       },
-//                     ),
-//                   );
-//                 } else if (snapshot.hasError) {
-//                   return Text('${snapshot.error}');
-//                 }
-//                 // By default, show a loading spinner.
-//                 return const CircularProgressIndicator();
-//               },
-//             ),
-//           ),
-//           ])),
-//     );
-//   }
-// }
