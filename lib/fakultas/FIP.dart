@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
+import 'package:iku_application/departemen/Adpen.dart';
+import 'package:iku_application/departemen/BK.dart';
+import 'package:iku_application/departemen/Tekpen.dart';
 
 void main() {
   runApp(const FIP());
@@ -61,7 +64,12 @@ class FIP extends StatelessWidget {
                             style: TextStyle(backgroundColor: Colors.white),
                           ),
                         ),
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.of(context)
+                              .push(MaterialPageRoute(builder: (context) {
+                            return BK();
+                          }));
+                        },
                       ),
                       InkWell(
                         child: Container(
@@ -73,7 +81,12 @@ class FIP extends StatelessWidget {
                           margin: const EdgeInsets.all(20),
                           alignment: Alignment.bottomCenter,
                         ),
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.of(context)
+                              .push(MaterialPageRoute(builder: (context) {
+                            return Adpen();
+                          }));
+                        },
                       ),
                       InkWell(
                         child: Container(
@@ -115,7 +128,12 @@ class FIP extends StatelessWidget {
                           margin: const EdgeInsets.all(20),
                           alignment: Alignment.bottomCenter,
                         ),
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.of(context)
+                              .push(MaterialPageRoute(builder: (context) {
+                            return Tekpen();
+                          }));
+                        },
                       ),
                       InkWell(
                         child: Container(

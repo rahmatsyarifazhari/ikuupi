@@ -168,33 +168,23 @@ class IKU extends StatelessWidget {
                         alignment: Alignment.bottomCenter,
                       ),
                       Container(
-                          decoration: BoxDecoration(
-                              // border: Border.all(),
-                              image: const DecorationImage(
-                                  image: AssetImage("images/UPI.png"))),
-                          padding: const EdgeInsets.all(14),
-                          margin: const EdgeInsets.all(20),
-                          alignment: Alignment.center,
-                          child: const Text(
-                            'K.D SUMEDANG',
-                            style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                backgroundColor: Colors.white),
-                          )),
+                        decoration: BoxDecoration(
+                            // border: Border.all(),
+                            image: const DecorationImage(
+                                image: AssetImage("images/KDSUMEDANG.png"))),
+                        padding: const EdgeInsets.all(14),
+                        margin: const EdgeInsets.all(20),
+                        alignment: Alignment.center,
+                      ),
                       Container(
-                          decoration: BoxDecoration(
-                              // border: Border.all(),
-                              image: const DecorationImage(
-                                  image: AssetImage("images/UPI.png"))),
-                          padding: const EdgeInsets.all(14),
-                          margin: const EdgeInsets.all(20),
-                          alignment: Alignment.center,
-                          child: const Text(
-                            'K.D TASIKMALAYA',
-                            style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                backgroundColor: Colors.white),
-                          )),
+                        decoration: BoxDecoration(
+                            // border: Border.all(),
+                            image: const DecorationImage(
+                                image: AssetImage("images/KDTASIKMALAYA.png"))),
+                        padding: const EdgeInsets.all(14),
+                        margin: const EdgeInsets.all(20),
+                        alignment: Alignment.center,
+                      ),
                       Container(
                         decoration: BoxDecoration(
                             // border: Border.all(),

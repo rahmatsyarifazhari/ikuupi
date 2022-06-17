@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:iku_application/departemen/Biologi.dart';
+import 'package:iku_application/departemen/Fisika.dart';
+import 'package:iku_application/departemen/IPSE.dart';
 import 'package:iku_application/departemen/Kemakom.dart';
+import 'package:iku_application/departemen/Kimia.dart';
+import 'package:iku_application/departemen/Matematika.dart';
 import 'package:iku_application/fakultas/FPIMIPA.dart';
 import 'package:hexcolor/hexcolor.dart';
 
@@ -16,7 +21,7 @@ class FPMIPA extends StatelessWidget {
       title: 'GRID',
       home: Scaffold(
           appBar: AppBar(
-            leading: GestureDetector(
+            leading: InkWell(
               child: Icon(
                 Icons.arrow_back_ios,
                 color: Colors.white,
@@ -77,7 +82,12 @@ class FPMIPA extends StatelessWidget {
                           margin: const EdgeInsets.all(20),
                           alignment: Alignment.bottomCenter,
                         ),
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.of(context)
+                              .push(MaterialPageRoute(builder: (context) {
+                            return Biologi();
+                          }));
+                        },
                       ),
                       InkWell(
                         child: Container(
@@ -89,7 +99,12 @@ class FPMIPA extends StatelessWidget {
                           margin: const EdgeInsets.all(20),
                           alignment: Alignment.bottomCenter,
                         ),
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.of(context)
+                              .push(MaterialPageRoute(builder: (context) {
+                            return Kimia();
+                          }));
+                        },
                       ),
                       InkWell(
                         child: Container(
@@ -101,7 +116,12 @@ class FPMIPA extends StatelessWidget {
                           margin: const EdgeInsets.all(20),
                           alignment: Alignment.bottomCenter,
                         ),
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.of(context)
+                              .push(MaterialPageRoute(builder: (context) {
+                            return Fisika();
+                          }));
+                        },
                       ),
                       InkWell(
                         child: Container(
@@ -113,7 +133,12 @@ class FPMIPA extends StatelessWidget {
                           margin: const EdgeInsets.all(20),
                           alignment: Alignment.bottomCenter,
                         ),
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.of(context)
+                              .push(MaterialPageRoute(builder: (context) {
+                            return Matematika();
+                          }));
+                        },
                       ),
                       InkWell(
                         child: Container(
@@ -125,7 +150,12 @@ class FPMIPA extends StatelessWidget {
                           margin: const EdgeInsets.all(20),
                           alignment: Alignment.bottomCenter,
                         ),
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.of(context)
+                              .push(MaterialPageRoute(builder: (context) {
+                            return IPSE();
+                          }));
+                        },
                       ),
                     ]),
               )

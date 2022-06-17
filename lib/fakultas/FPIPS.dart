@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:iku_application/departemen/Geografi.dart';
+import 'package:iku_application/departemen/PKN.dart';
+import 'package:iku_application/departemen/Sejarah.dart';
 import 'package:iku_application/fakultas/FPIPS.dart';
 import 'package:hexcolor/hexcolor.dart';
 
@@ -58,7 +61,12 @@ class FPIPS extends StatelessWidget {
                           margin: const EdgeInsets.all(20),
                           alignment: Alignment.bottomCenter,
                         ),
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.of(context)
+                              .push(MaterialPageRoute(builder: (context) {
+                            return PKN();
+                          }));
+                        },
                       ),
                       InkWell(
                         child: Container(
@@ -70,7 +78,12 @@ class FPIPS extends StatelessWidget {
                           margin: const EdgeInsets.all(20),
                           alignment: Alignment.bottomCenter,
                         ),
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.of(context)
+                              .push(MaterialPageRoute(builder: (context) {
+                            return Sejarah();
+                          }));
+                        },
                       ),
                       InkWell(
                         child: Container(
@@ -82,7 +95,12 @@ class FPIPS extends StatelessWidget {
                           margin: const EdgeInsets.all(20),
                           alignment: Alignment.bottomCenter,
                         ),
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.of(context)
+                              .push(MaterialPageRoute(builder: (context) {
+                            return Geografi();
+                          }));
+                        },
                       ),
                       InkWell(
                         child: Container(
