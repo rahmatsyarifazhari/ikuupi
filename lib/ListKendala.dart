@@ -119,22 +119,31 @@ class ListKendalaState extends State<ListKendala> {
                                 decoration: BoxDecoration(border: Border.all()),
                                 padding: const EdgeInsets.all(14),
                                 child: Row(
-                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    mainAxisAlignment: MainAxisAlignment.start,
                                     children: [
                                       Container(
-                                        padding: EdgeInsets.all(15),
-                                        margin: EdgeInsets.only(right: 100),
-                                        decoration:
-                                            BoxDecoration(border: Border.all()),
+                                        // padding: EdgeInsets.all(15),
+                                        // margin: EdgeInsets.only(right: 100),
+                                        // decoration:
+                                        //     BoxDecoration(border: Border.all()),
                                         child: Text(snapshot
                                             .data!.ListPop[index].no
                                             .toString()),
                                       ),
-                                      Text(snapshot
-                                          .data!.ListPop[index].departemen
-                                          .toString()),
-                                      Text(snapshot.data!.ListPop[index].kendala
-                                          .toString()),
+                                      Container(
+                                        // decoration:
+                                        //     BoxDecoration(border: Border.all()),
+                                        child: Text(snapshot
+                                            .data!.ListPop[index].departemen
+                                            .toString()),
+                                      ),
+                                      Container(
+                                        // decoration:
+                                        //     BoxDecoration(border: Border.all()),
+                                        child: Text(snapshot
+                                            .data!.ListPop[index].kendala
+                                            .toString()),
+                                      )
                                     ]));
                           },
                         ),

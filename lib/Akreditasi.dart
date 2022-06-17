@@ -124,10 +124,10 @@ class AkrState extends State<Akr> {
                               .data!.ListPop.length, //asumsikan data ada isi
                           itemBuilder: (context, index) {
                             return Container(
-                                decoration: BoxDecoration(border: Border.all()),
-                                // padding: const EdgeInsets.all(14),
+                                // decoration: BoxDecoration(border: Border.all()),
+                                padding: const EdgeInsets.all(14),
                                 child: Row(
-                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    mainAxisAlignment: MainAxisAlignment.start,
                                     children: [
                                       Container(
                                         // padding: EdgeInsets.all(15),
