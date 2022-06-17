@@ -58,12 +58,7 @@ class FPIPS extends StatelessWidget {
                           margin: const EdgeInsets.all(20),
                           alignment: Alignment.bottomCenter,
                         ),
-                        onTap: () {
-                          Navigator.of(context)
-                              .push(MaterialPageRoute(builder: (context) {
-                            return FPIPS();
-                          }));
-                        },
+                        onTap: () {},
                       ),
                       InkWell(
                         child: Container(
@@ -75,12 +70,7 @@ class FPIPS extends StatelessWidget {
                           margin: const EdgeInsets.all(20),
                           alignment: Alignment.bottomCenter,
                         ),
-                        onTap: () {
-                          Navigator.of(context)
-                              .push(MaterialPageRoute(builder: (context) {
-                            return FPIPS();
-                          }));
-                        },
+                        onTap: () {},
                       ),
                       InkWell(
                         child: Container(
@@ -92,12 +82,7 @@ class FPIPS extends StatelessWidget {
                           margin: const EdgeInsets.all(20),
                           alignment: Alignment.bottomCenter,
                         ),
-                        onTap: () {
-                          Navigator.of(context)
-                              .push(MaterialPageRoute(builder: (context) {
-                            return FPIPS();
-                          }));
-                        },
+                        onTap: () {},
                       ),
                       InkWell(
                         child: Container(
@@ -112,12 +97,7 @@ class FPIPS extends StatelessWidget {
                               'Pendidikan Agama Islam',
                               style: TextStyle(backgroundColor: Colors.white),
                             )),
-                        onTap: () {
-                          Navigator.of(context)
-                              .push(MaterialPageRoute(builder: (context) {
-                            return FPIPS();
-                          }));
-                        },
+                        onTap: () {},
                       ),
                       InkWell(
                         child: Container(
@@ -129,12 +109,7 @@ class FPIPS extends StatelessWidget {
                           margin: const EdgeInsets.all(20),
                           alignment: Alignment.bottomCenter,
                         ),
-                        onTap: () {
-                          Navigator.of(context)
-                              .push(MaterialPageRoute(builder: (context) {
-                            return FPIPS();
-                          }));
-                        },
+                        onTap: () {},
                       ),
                       InkWell(
                         child: Container(
@@ -146,12 +121,7 @@ class FPIPS extends StatelessWidget {
                           margin: const EdgeInsets.all(20),
                           alignment: Alignment.bottomCenter,
                         ),
-                        onTap: () {
-                          Navigator.of(context)
-                              .push(MaterialPageRoute(builder: (context) {
-                            return FPIPS();
-                          }));
-                        },
+                        onTap: () {},
                       ),
                       InkWell(
                         child: Container(
@@ -163,12 +133,7 @@ class FPIPS extends StatelessWidget {
                           margin: const EdgeInsets.all(20),
                           alignment: Alignment.bottomCenter,
                         ),
-                        onTap: () {
-                          Navigator.of(context)
-                              .push(MaterialPageRoute(builder: (context) {
-                            return FPIPS();
-                          }));
-                        },
+                        onTap: () {},
                       ),
                       InkWell(
                         child: Container(
@@ -180,12 +145,7 @@ class FPIPS extends StatelessWidget {
                           margin: const EdgeInsets.all(20),
                           alignment: Alignment.bottomCenter,
                         ),
-                        onTap: () {
-                          Navigator.of(context)
-                              .push(MaterialPageRoute(builder: (context) {
-                            return FPIPS();
-                          }));
-                        },
+                        onTap: () {},
                       ),
                       InkWell(
                         child: Container(
@@ -198,12 +158,7 @@ class FPIPS extends StatelessWidget {
                           margin: const EdgeInsets.all(20),
                           alignment: Alignment.bottomCenter,
                         ),
-                        onTap: () {
-                          Navigator.of(context)
-                              .push(MaterialPageRoute(builder: (context) {
-                            return FPIPS();
-                          }));
-                        },
+                        onTap: () {},
                       ),
                       InkWell(
                         child: Container(
@@ -215,12 +170,7 @@ class FPIPS extends StatelessWidget {
                           margin: const EdgeInsets.all(20),
                           alignment: Alignment.bottomCenter,
                         ),
-                        onTap: () {
-                          Navigator.of(context)
-                              .push(MaterialPageRoute(builder: (context) {
-                            return FPIPS();
-                          }));
-                        },
+                        onTap: () {},
                       ),
                     ]),
               )

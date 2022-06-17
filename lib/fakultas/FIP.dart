@@ -61,12 +61,7 @@ class FIP extends StatelessWidget {
                             style: TextStyle(backgroundColor: Colors.white),
                           ),
                         ),
-                        onTap: () {
-                          Navigator.of(context)
-                              .push(MaterialPageRoute(builder: (context) {
-                            return FIP();
-                          }));
-                        },
+                        onTap: () {},
                       ),
                       InkWell(
                         child: Container(
@@ -78,12 +73,7 @@ class FIP extends StatelessWidget {
                           margin: const EdgeInsets.all(20),
                           alignment: Alignment.bottomCenter,
                         ),
-                        onTap: () {
-                          Navigator.of(context)
-                              .push(MaterialPageRoute(builder: (context) {
-                            return FIP();
-                          }));
-                        },
+                        onTap: () {},
                       ),
                       InkWell(
                         child: Container(
@@ -98,12 +88,7 @@ class FIP extends StatelessWidget {
                               'Pendidikan Luar Sekolah',
                               style: TextStyle(backgroundColor: Colors.white),
                             )),
-                        onTap: () {
-                          Navigator.of(context)
-                              .push(MaterialPageRoute(builder: (context) {
-                            return FIP();
-                          }));
-                        },
+                        onTap: () {},
                       ),
                       InkWell(
                         child: Container(
@@ -118,12 +103,7 @@ class FIP extends StatelessWidget {
                               'Pendidikan Luar Biasa',
                               style: TextStyle(backgroundColor: Colors.white),
                             )),
-                        onTap: () {
-                          Navigator.of(context)
-                              .push(MaterialPageRoute(builder: (context) {
-                            return FIP();
-                          }));
-                        },
+                        onTap: () {},
                       ),
                       InkWell(
                         child: Container(
@@ -135,12 +115,7 @@ class FIP extends StatelessWidget {
                           margin: const EdgeInsets.all(20),
                           alignment: Alignment.bottomCenter,
                         ),
-                        onTap: () {
-                          Navigator.of(context)
-                              .push(MaterialPageRoute(builder: (context) {
-                            return FIP();
-                          }));
-                        },
+                        onTap: () {},
                       ),
                       InkWell(
                         child: Container(
@@ -152,12 +127,7 @@ class FIP extends StatelessWidget {
                           margin: const EdgeInsets.all(20),
                           alignment: Alignment.bottomCenter,
                         ),
-                        onTap: () {
-                          Navigator.of(context)
-                              .push(MaterialPageRoute(builder: (context) {
-                            return FIP();
-                          }));
-                        },
+                        onTap: () {},
                       ),
                       InkWell(
                         child: Container(
@@ -170,12 +140,7 @@ class FIP extends StatelessWidget {
                           margin: const EdgeInsets.all(20),
                           alignment: Alignment.bottomCenter,
                         ),
-                        onTap: () {
-                          Navigator.of(context)
-                              .push(MaterialPageRoute(builder: (context) {
-                            return FIP();
-                          }));
-                        },
+                        onTap: () {},
                       ),
                       InkWell(
                         child: Container(
@@ -187,12 +152,7 @@ class FIP extends StatelessWidget {
                           margin: const EdgeInsets.all(20),
                           alignment: Alignment.bottomCenter,
                         ),
-                        onTap: () {
-                          Navigator.of(context)
-                              .push(MaterialPageRoute(builder: (context) {
-                            return FIP();
-                          }));
-                        },
+                        onTap: () {},
                       ),
                       InkWell(
                         child: Container(
@@ -207,12 +167,7 @@ class FIP extends StatelessWidget {
                               'Perpustakaan & Informasi',
                               style: TextStyle(backgroundColor: Colors.white),
                             )),
-                        onTap: () {
-                          Navigator.of(context)
-                              .push(MaterialPageRoute(builder: (context) {
-                            return FIP();
-                          }));
-                        },
+                        onTap: () {},
                       ),
                     ]),
               )

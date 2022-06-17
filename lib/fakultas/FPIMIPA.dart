@@ -77,12 +77,7 @@ class FPMIPA extends StatelessWidget {
                           margin: const EdgeInsets.all(20),
                           alignment: Alignment.bottomCenter,
                         ),
-                        onTap: () {
-                          Navigator.of(context)
-                              .push(MaterialPageRoute(builder: (context) {
-                            return FPMIPA();
-                          }));
-                        },
+                        onTap: () {},
                       ),
                       InkWell(
                         child: Container(
@@ -94,12 +89,7 @@ class FPMIPA extends StatelessWidget {
                           margin: const EdgeInsets.all(20),
                           alignment: Alignment.bottomCenter,
                         ),
-                        onTap: () {
-                          Navigator.of(context)
-                              .push(MaterialPageRoute(builder: (context) {
-                            return FPMIPA();
-                          }));
-                        },
+                        onTap: () {},
                       ),
                       InkWell(
                         child: Container(
@@ -111,12 +101,7 @@ class FPMIPA extends StatelessWidget {
                           margin: const EdgeInsets.all(20),
                           alignment: Alignment.bottomCenter,
                         ),
-                        onTap: () {
-                          Navigator.of(context)
-                              .push(MaterialPageRoute(builder: (context) {
-                            return FPMIPA();
-                          }));
-                        },
+                        onTap: () {},
                       ),
                       InkWell(
                         child: Container(
@@ -128,12 +113,7 @@ class FPMIPA extends StatelessWidget {
                           margin: const EdgeInsets.all(20),
                           alignment: Alignment.bottomCenter,
                         ),
-                        onTap: () {
-                          Navigator.of(context)
-                              .push(MaterialPageRoute(builder: (context) {
-                            return FPMIPA();
-                          }));
-                        },
+                        onTap: () {},
                       ),
                       InkWell(
                         child: Container(
@@ -145,12 +125,7 @@ class FPMIPA extends StatelessWidget {
                           margin: const EdgeInsets.all(20),
                           alignment: Alignment.bottomCenter,
                         ),
-                        onTap: () {
-                          Navigator.of(context)
-                              .push(MaterialPageRoute(builder: (context) {
-                            return FPMIPA();
-                          }));
-                        },
+                        onTap: () {},
                       ),
                     ]),
               )
