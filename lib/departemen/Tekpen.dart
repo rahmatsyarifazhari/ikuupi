@@ -50,39 +50,71 @@ class Tekpen extends StatelessWidget {
                       columns: <DataColumn>[
                         DataColumn(label: Text("No")),
                         DataColumn(label: Text("Progress")),
-                        DataColumn(label: Text("Status")),
+                        DataColumn(label: Text("Persentase")),
                       ],
                       rows: <DataRow>[
                         DataRow(
                           cells: <DataCell>[
                             DataCell(Text("1")),
                             DataCell(Text("Fasilitas memadai")),
-                            DataCell(Checkbox(
-                              value: true,
-                              onChanged: (value) {},
-                            )),
+                            DataCell(Text(" 95% " )),
                           ],
                         ),
                         DataRow(cells: <DataCell>[
                           DataCell(Text("2")),
                           DataCell(Text("Tenaga pengajar berkualitas")),
-                          DataCell(Checkbox(
-                            value: true,
-                            onChanged: (value) {},
-                          )),
+                          DataCell(Text(" 90% " )),
                         ]),
                         DataRow(
                           cells: <DataCell>[
                             DataCell(Text("3")),
                             DataCell(Text("Beasiswa prestasi")),
-                            DataCell(Checkbox(
-                              value: false,
-                              onChanged: (value) {},
-                            )),
-                          ],
-                        ),
+                            DataCell(Text(" 75% " )),
+                          ]),
+                          DataRow(
+                          cells: <DataCell>[
+                            DataCell(Text("4")),
+                            DataCell(Text("Persentase mata kuliah yang mengunakan pembelajaran daring (blended learning)")),
+                            DataCell(Text(" 85% " )),
+                          ]),
+                          DataRow(
+                          cells: <DataCell>[
+                            DataCell(Text("5")),
+                            DataCell(Text("Persentase lulusan bersertifikat kompetensi")),
+                            DataCell(Text(" 75% " )),
+                          ]),
+                          DataRow(
+                          cells: <DataCell>[
+                            DataCell(Text("6")),
+                            DataCell(Text("Persentase keterserapan lulusan")),
+                            DataCell(Text(" 85% " )),
+                          ]),
+                          DataRow(
+                          cells: <DataCell>[
+                            DataCell(Text("7")),
+                            DataCell(Text("Presentasi kelulusan mahasiswa PPG")),
+                            DataCell(Text(" 75% " )),
+                          ]),
+                          DataRow(
+                          cells: <DataCell>[
+                            DataCell(Text("8")),
+                            DataCell(Text("Persentase kelulusan mahasiswa tepat waktu")),
+                            DataCell(Text(" 60% " )),
+                          ]),
+                          DataRow(
+                          cells: <DataCell>[
+                            DataCell(Text("9")),
+                            DataCell(Text("Artikel hasil penelitian yang dipublikasikan pada jurnal bereputasi")),
+                            DataCell(Text(" 85% " )),
+                          ]),
+                          DataRow(
+                          cells: <DataCell>[
+                            DataCell(Text("10")),
+                            DataCell(Text("Tingkat keketatan peminat (calon mahasiswa baru)")),
+                            DataCell(Text(" 100% " )),
+                          ]),
                       ],
-                    ),
+                    ),                   
                   ])),
               Container(
                   decoration: BoxDecoration(border: Border.all()),

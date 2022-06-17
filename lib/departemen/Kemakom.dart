@@ -1,114 +1,157 @@
 import 'package:flutter/material.dart';
+import 'package:iku_application/fakultas/FPIMIPA.dart';
 import 'package:hexcolor/hexcolor.dart';
+import 'package:http/http.dart' as http;
+import 'dart:convert';
 
-void main() {
-  runApp(const Kemakom());
+
+class LK {
+  int id;
+  String progress;
+  String persentase;
+  LK({required this.id, required this.progress, required this.persentase});
 }
 
-class Kemakom extends StatelessWidget {
-  const Kemakom({Key? key}) : super(key: key);
+class Progress {
+  List<LK> ListPop = <LK>[];
+
+  Progress(Map<String, dynamic> json) {
+    // isi listPop disini
+    var data = json["data"];
+
+    for (var val in data) {
+      var id = int.parse(val["id"]);
+      var progress = val["Progress"];
+      var persentase= val["Persentase"];
+      ListPop.add(LK(id: id, progress: progress, persentase: persentase));
+    }
+  }
+  //map dari json ke atribut
+  factory Progress.fromJson(Map<String, dynamic> json) {
+    return Progress(json);
+  }
+}
+
+void main() {
+  runApp(Kemakom());
+}
+
+class Kemakom extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() {
+    return KemakomState();
+  }
+}
+
+//class state
+class KemakomState extends State<Kemakom> {
+  late Future<Progress> futureAKREDITASI;
+
+  String url = "https://ikuupiii.herokuapp.com/progress";
+
+  //fetch data
+  Future<Progress> fetchData() async {
+    final response = await http.get(Uri.parse(url));
+
+    if (response.statusCode == 200) {
+      // jika server mengembalikan 200 OK (berhasil),
+      // parse json
+      return Progress.fromJson(jsonDecode(response.body));
+    } else {
+      // jika gagal (bukan  200 OK),
+      // lempar exception
+      throw Exception('Gagal load');
+    }
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    futureAKREDITASI = fetchData();
+  }
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Progress dan Kendala',
-      home: Scaffold(
-          appBar: AppBar(
-            leading: GestureDetector(
-              child: Icon(
+        title: 'List Kendala',
+        home: Scaffold(
+            appBar: AppBar(
+              leading: InkWell(
+                child: Icon(
                 Icons.arrow_back_ios,
-                color: Colors.black,
+                color: Colors.white,
               ),
-              onTap: () {
+                 onTap: () {
                 Navigator.pop(context);
               },
+              ),
+              centerTitle: true,
+              backgroundColor: HexColor("#E45826"),
+              title: const Text("Progress"),
             ),
-            centerTitle: true,
-            backgroundColor: HexColor("#E45826"),
-            title: const Text('Progress dan Kendala IKU'),
-          ),
-          body: Stack(children: [
-            Container(
-              height: double.infinity,
-              decoration: BoxDecoration(
-                  image: DecorationImage(
-                fit: BoxFit.cover,
-                image: const AssetImage("images/isola.jpg"),
-                colorFilter: ColorFilter.mode(
-                    Colors.black.withOpacity(0.2), BlendMode.dstATop),
-              )),
-            ),
-            ListView(padding: const EdgeInsets.all(5), children: [
+            body: Stack(children: [
               Container(
-                  decoration: BoxDecoration(border: Border.all()),
-                  padding: EdgeInsets.all(14),
-                  child: Column(children: [
-                    Text(
-                      "Progress IKU",
-                    ),
-                    DataTable(
-                      columns: <DataColumn>[
-                        DataColumn(label: Text("No")),
-                        DataColumn(label: Text("Progress")),
-                        DataColumn(label: Text("Status")),
-                      ],
-                      rows: <DataRow>[
-                        DataRow(
-                          cells: <DataCell>[
-                            DataCell(Text("1")),
-                            DataCell(Text("Fasilitas memadai")),
-                            DataCell(Checkbox(
-                              value: true,
-                              onChanged: (value) {},
-                            )),
-                          ],
+                height: double.infinity,
+                decoration: BoxDecoration(
+                    image: DecorationImage(
+                  fit: BoxFit.cover,
+                  image: const AssetImage("images/isola.jpg"),
+                  colorFilter: ColorFilter.mode(
+                      Colors.black.withOpacity(0.2), BlendMode.dstATop),
+                )),
+              ),
+              Center(
+                child: FutureBuilder<Progress>(
+                  future: futureAKREDITASI,
+                  builder: (context, snapshot) {
+                    if (snapshot.hasData) {
+                      return Center(
+                        //gunakan listview builder
+                        child: ListView.builder(
+                          itemCount: snapshot
+                              .data!.ListPop.length, //asumsikan data ada isi
+                          itemBuilder: (context, index) {
+                            return Container(
+                                decoration: BoxDecoration(border: Border.all()),
+                                padding: const EdgeInsets.all(14),
+                                child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    children: [
+                                      Container(
+                                        // padding: EdgeInsets.all(15),
+                                        // margin: EdgeInsets.only(right: 100),
+                                        // decoration:
+                                        //     BoxDecoration(border: Border.all()),
+                                        child: Text(snapshot
+                                            .data!.ListPop[index].id
+                                            .toString()),
+                                      ),
+                                      Container(
+                                        // decoration:
+                                        //     BoxDecoration(border: Border.all()),
+                                        child: Text(snapshot
+                                            .data!.ListPop[index].progress
+                                            .toString()),
+                                      ),
+                                      Container(
+                                        // decoration:
+                                        //     BoxDecoration(border: Border.all()),
+                                        child: Text(snapshot
+                                            .data!.ListPop[index].persentase
+                                            .toString()),
+                                      )
+                                    ]));
+                          },
                         ),
-                        DataRow(cells: <DataCell>[
-                          DataCell(Text("2")),
-                          DataCell(Text("Tenaga pengajar berkualitas")),
-                          DataCell(Checkbox(
-                            value: true,
-                            onChanged: (value) {},
-                          )),
-                        ]),
-                        DataRow(
-                          cells: <DataCell>[
-                            DataCell(Text("3")),
-                            DataCell(Text("Beasiswa prestasi")),
-                            DataCell(Checkbox(
-                              value: false,
-                              onChanged: (value) {},
-                            )),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ])),
-              Container(
-                  decoration: BoxDecoration(border: Border.all()),
-                  padding: EdgeInsets.all(14),
-                  child: Column(children: [
-                    Text(
-                      "Kendala IKU",
-                    ),
-                    DataTable(
-                      columns: <DataColumn>[
-                        DataColumn(label: Text("No")),
-                        DataColumn(label: Text("Kendala")),
-                      ],
-                      rows: <DataRow>[
-                        DataRow(
-                          cells: <DataCell>[
-                            DataCell(Text("1")),
-                            DataCell(Text(
-                                "Dosen dengan kualifikasi doktor masih rendah")),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ]))
-            ]),
-          ])),
-    );
+                      );
+                    } else if (snapshot.hasError) {
+                      return Text('${snapshot.error}');
+                    }
+                    // By default, show a loading spinner.
+                    return const CircularProgressIndicator();
+                  },
+                ),
+              ),
+            ])));
   }
 }
